@@ -1,0 +1,13 @@
+POST /login
+   |
+routes.py -> login_user(data)
+   |
+validators.py -> valida email e senha
+   |
+database.py -> busca usuário no MySQL
+   |
+bcrypt -> valida senha
+   |
+gerar_token -> cria JWT
+   |
+retorna JSON { token, user }

@@ -1,0 +1,115 @@
+
+
+.guests-container {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  background: transparent; 
+  color: inherit;
+}
+
+
+
+.guests-container .guests-title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+
+  color: inherit;
+}
+
+
+.guests-container .top-actions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.guests-container .new-guest-button {
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #007bff;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.guests-container .new-guest-button:hover {
+  background: #0069d9;
+}
+
+
+
+.guests-container .guests-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+
+
+.guests-container .guest-card {
+  padding: 15px;
+  border-radius: 12px;
+
+  background: transparent;
+
+  border: 1px solid rgba(0,0,0,0.12);
+
+  transition: 0.2s;
+}
+
+.guests-container .guest-card:hover {
+  transform: translateY(-3px);
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+
+  .guests-container {
+    color: #fff;
+  }
+
+  .guests-container .guest-card {
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+}
+
+
+
+.guests-container .guest-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 6px;
+
+  color: inherit;
+}
+
+
+
+.guests-container .guest-card button {
+  margin: 5px 5px 0 0;
+  padding: 6px 10px;
+
+  border: none;
+  border-radius: 6px;
+
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.guests-container .guest-card button:first-of-type {
+  background: #28a745;
+  color: white;
+}
+
+.guests-container .guest-card button:last-of-type {
+  background: #dc3545;
+  color: white;
+}

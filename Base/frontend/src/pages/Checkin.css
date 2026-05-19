@@ -1,0 +1,45 @@
+.checkin-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  font-family: Arial;
+}
+
+.checkin-search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.checkin-search input {
+  flex: 1;
+  padding: 10px;
+}
+
+.checkin-search button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.checkin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkin-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.checkin-card button {
+  padding: 8px 12px;
+  background: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,65 @@
+
+
+@media (prefers-color-scheme: dark) {
+
+
+  .guests-container {
+    background: #121212;
+    color: #fff;
+  }
+
+  .guest-form {
+    background: #1e1e1e;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  }
+
+
+  .guest-form label {
+    color: #fff;
+  }
+
+
+  .guest-form input,
+  .guest-form select {
+    background: #2a2a2a;
+    border: 1px solid #333;
+    color: #fff;
+    box-sizing: border-box; 
+  }
+
+  .guest-form input:focus,
+  .guest-form select:focus {
+    background: #2a2a2a;
+    border-color: #007bff;
+  }
+
+ 
+  .guest-form button {
+    background: #007bff;
+    color: #fff;
+  }
+
+  .guest-form button:hover {
+    background: #0069d9;
+  }
+
+
+  .guest-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+  }
+
+
+  .guest-name {
+    color: #fff;
+  }
+
+  .guest-text {
+    color: #ccc;
+  }
+
+  /* TÍTULO */
+  .guests-title {
+    color: #fff;
+  }
+}

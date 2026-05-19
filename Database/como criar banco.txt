@@ -1,0 +1,25 @@
+import mysql.connector
+
+def criar_banco():
+    conexao= mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password=""
+    )
+    cursor=conexao.cursor()
+    
+    cursor.execute("""
+    SELECT SCHEMA_NAME
+    FROM information_schema.SCHEMATA
+    WHERE SCHEMA_NAME ='banco_teste'
+    """)
+    existe= cursor.fetchone()
+
+    if existe:
+        print ("Banco ja existe!")
+
+    else: 
+        cursor.execute("CREATE DATABASE banco_teste DEFAULT CHARACTER SET utf8")
+    cursor.close()
+    conexao.close()
+criar_banco()
